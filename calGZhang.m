@@ -59,9 +59,9 @@ legend([ha hb],{'P','S'});
 %xlim(t([1 end]));
 ylim([0 6.1]);
 set(gca,'yTick',[1:5],'yTickLabel',{'g^H33','g^H13','g^H22','g^H31','g^H11'});
-title(sprintf('G(%d,%d,0,t;0,0,%3.1f,0) A=%s Zhang',x1,x2,x3,num2str(A)));
+title(sprintf('G(%d,%d,0,t;0,0,%3.1f,0) A=%s Zhang',x1,x2,e3,num2str(A)));
 xlabel('t/s');
-print(gcf,'-djpeg','-r300',sprintf('%d_%3.1fZhang.jpg',x1,x3));
+print(gcf,'-djpeg','-r300',sprintf('%d_%3.1fZhang.jpg',x1,e3));
 fclose all;
 
 figure(fn)
@@ -80,5 +80,5 @@ legend([hJ hZ],{'Jiang','Zhang(ref)'});
 %set(gca,'yTick',[1:5],'yTickLabel',{'g^H33','g^H13','g^H22','g^H31','g^H11'});
 %title(sprintf('G(%d,%d,0,t;0,0,%d,0) A=%s',x1,x2,x3,num2str(A)));
 %xlabel('t/s');
-print(gcf,'-djpeg','-r300',sprintf('%d_%3.1fJiang_Zhang.jpg',x1,x3));
+print(gcf,'-djpeg','-r300',sprintf('%d_%3.1fJiang_Zhang.jpg',x1,e3));
 
